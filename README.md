@@ -106,36 +106,6 @@ const services = [
    ]
    ```
 
-## 🔧 Configuración de Servicios
-
-### Configurar Stripe
-
-1. Crea una cuenta en [Stripe](https://stripe.com)
-2. Obtén tus API keys desde el Dashboard
-3. Agrega las keys a `.env.local`
-4. Para pruebas, usa las keys de test mode
-
-### Configurar Mercado Pago
-
-1. Crea una cuenta en [Mercado Pago](https://www.mercadopago.com.mx)
-2. Crea una aplicación y obtén tus credenciales
-3. Agrega las credenciales a `.env.local`
-4. Configura las URLs de retorno en el dashboard de Mercado Pago
-
-### Configurar WhatsApp
-
-1. Obtén el número de WhatsApp (formato: código país + número, sin +)
-2. Ejemplo: `521234567890` (México)
-3. Agrega a `NEXT_PUBLIC_WHATSAPP_NUMBER` en `.env.local`
-
-## 🚀 Deploy a Producción
-
-### Vercel (Recomendado)
-
-1. Conecta tu repositorio a Vercel
-2. Agrega las variables de entorno en la configuración de Vercel
-3. Deploy automático en cada push
-
 ### Otros servicios
 
 El proyecto es compatible con cualquier servicio que soporte Next.js:
