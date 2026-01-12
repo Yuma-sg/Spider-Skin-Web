@@ -39,7 +39,7 @@ export function Navbar() {
             <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
               <span className="text-white font-bold text-xl">S</span>
             </div>
-            <span className="font-display font-bold text-xl text-white">
+            <span className="font-display uppercase tracking-widest text-lg text-white">
               Spider <span className="text-primary-500">Skin</span>
             </span>
           </Link>
@@ -50,8 +50,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-primary-500 transition-colors font-medium relative group"
-              >
+                className="font-display uppercase tracking-widest text-sm text-gray-300 hover:text-primary-500 transition-colors relative group">
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300" />
               </Link>
@@ -101,18 +100,11 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
-                >
+                  className="block font-display uppercase tracking-widest text-sm text-gray-300 hover:text-primary-500 transition-colors py-3">
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/citas"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block btn-primary text-center"
-              >
-                Aparta tu Fecha
-              </Link>
+              <Link href="/citas" className="btn-primary font-display uppercase tracking-widest">Aparta tu Fecha</Link>
             </div>
           </motion.div>
         )}
